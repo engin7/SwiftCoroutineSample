@@ -13,6 +13,7 @@
 		28B175DD270F114F00CC399A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28B175DB270F114F00CC399A /* Main.storyboard */; };
 		28B175DF270F115000CC399A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28B175DE270F115000CC399A /* Assets.xcassets */; };
 		28B175E2270F115000CC399A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28B175E0270F115000CC399A /* LaunchScreen.storyboard */; };
+		28B175EB270F14D200CC399A /* SwiftCoroutine in Frameworks */ = {isa = PBXBuildFile; productRef = 28B175EA270F14D200CC399A /* SwiftCoroutine */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28B175EB270F14D200CC399A /* SwiftCoroutine in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = SwiftCoroutineSample;
+			packageProductDependencies = (
+				28B175EA270F14D200CC399A /* SwiftCoroutine */,
+			);
 			productName = SwiftCoroutineSample;
 			productReference = 28B175D2270F114F00CC399A /* SwiftCoroutineSample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 28B175C9270F114F00CC399A;
+			packageReferences = (
+				28B175E9270F14D200CC399A /* XCRemoteSwiftPackageReference "SwiftCoroutine" */,
+			);
 			productRefGroup = 28B175D3270F114F00CC399A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -360,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		28B175E9270F14D200CC399A /* XCRemoteSwiftPackageReference "SwiftCoroutine" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/belozierov/SwiftCoroutine";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		28B175EA270F14D200CC399A /* SwiftCoroutine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28B175E9270F14D200CC399A /* XCRemoteSwiftPackageReference "SwiftCoroutine" */;
+			productName = SwiftCoroutine;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 28B175CA270F114F00CC399A /* Project object */;
 }
